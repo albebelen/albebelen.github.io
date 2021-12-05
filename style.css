@@ -1,0 +1,67 @@
+body {
+    background-color:  rgb(213, 211, 211);
+    font: verdana;
+}
+
+
+main {
+   display:flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-content: center;
+}
+
+article {
+    border-right-color: black;
+    margin-right: 50px;
+} 
+
+aside {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-right: 10px;
+
+}
+
+button {
+    background-color: rgb(12, 12, 12);
+    border: 0;
+    height: 30px;
+    color: rgb(230, 230, 230); 
+}
+
+a {
+    color: rgb(230, 230, 230);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+nav li  {
+    display: inline;
+    padding: 5px;
+    float: left;
+}
+
+nav {
+    background-color: rgb(12, 12, 12);
+    height: 30px;
+    margin-top: 0px;
+}
+
+nav a {
+    padding: 1px;
+    font: verdana;
+}
+
+#farRight {
+    float: right;
+    margin-right: 20px;
+} 
+
+.emoDiv {
+    margin-left: 10px;
+}
