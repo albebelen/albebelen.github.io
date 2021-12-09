@@ -23,7 +23,7 @@
 
     <main> <!-- main div -->
 
-        <article class="emoDiv"> 
+        <article class="emoDiv phraseDiv"> 
             <div><h1>Self doubt.</h1></div>
              
             <div> 
@@ -34,7 +34,26 @@
                         <i>(Pensieri - Libro VI, 19)</i>
                 </h4>
             </div>
+
+            <div class="face"> 
+                <img onmouseover="changeFloat(this)"  src="/images/selfdoubt.png" alt="self-doubting face"/>  <!--id="faceImg"  onmouseout="leftFloat(this)"-->
+            </div>
         </article>
     </main>
+
+    <script>
+        
+        function changeFloat(emoImage) {
+            var attr = getComputedStyle(emoImage); // returns the porperties of the given element
+            var floatValue = attr.getPropertyValue("float"); // returns the value of the specified properties
+            if (floatValue === "left") {
+                emoImage.style.float = "right";
+            }
+            else {
+                emoImage.style.float = "left";
+            }
+        }
+
+    </script>
 </body>
 </html>

@@ -23,12 +23,33 @@
 
     <main> <!-- main div -->
 
-        <article class="emoDiv"> 
+        <article class="emoDiv phraseDiv"> 
             <div><h1>Angry.</h1></div>
              
             <div> <h4 id="quoteAngry"><script>generateAngry(); </script></h4>
             </div>
+
+            <div class="face"> 
+                <img onmouseover="changeFloat(this)"  src="/images/angry.png" alt="angry face"/>  <!--id="faceImg"  onmouseout="leftFloat(this)"-->
+            </div>
+
         </article>
     </main>
+
+    <script>
+        
+        function changeFloat(emoImage) {
+            var attr = getComputedStyle(emoImage); // returns the porperties of the given element
+            var floatValue = attr.getPropertyValue("float"); // returns the value of the specified properties
+            if (floatValue === "left") {
+                emoImage.style.float = "right";
+            }
+            else {
+                emoImage.style.float = "left";
+            }
+        }
+
+    </script>
+
 </body>
 </html>

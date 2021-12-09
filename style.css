@@ -65,3 +65,19 @@ nav a {
 .emoDiv {
     margin-left: 10px;
 }
+
+.face {
+    border-radius: 50%;
+    width: 100%;
+}
+
+img {
+    height: 300px;
+    width: 300px;
+    float: left;
+    object-fit: cover;
+}
+
+.phraseDiv {
+    width: 100%;
+}
