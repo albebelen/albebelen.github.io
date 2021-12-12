@@ -1,6 +1,10 @@
+/*color palette: https://coolors.co/cad2c5-84a98c-52796f-354f52-2f3e46*/
+
 body {
-    background-color:  rgb(213, 211, 211);
+    background-color: #cad2c5;
     font: verdana;
+    color: #52796f;
+    margin: 0px;
 }
 
 
@@ -25,10 +29,17 @@ aside {
 }
 
 button {
-    background-color: rgb(12, 12, 12);
+    background-color: #84a98c;
     border: 0;
     height: 30px;
     color: rgb(230, 230, 230); 
+}
+
+/*effect when you hover on the buttons*/
+.raise:hover,
+.raise:focus {
+  box-shadow: 0 0.5em 0.5em 0.4em #354F52;
+  transform: translateY(-0.25em);
 }
 
 a {
@@ -46,8 +57,12 @@ nav li  {
     float: left;
 }
 
+nav ul {
+    margin: 0px;
+}
+
 nav {
-    background-color: rgb(12, 12, 12);
+    background-color: #2f3e46;
     height: 30px;
     margin-top: 0px;
 }
