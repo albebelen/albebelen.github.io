@@ -12,12 +12,13 @@ main {
    display:flex;
    flex-direction: row;
    justify-content: space-between;
-   align-content: center;
+   align-items: center;
 }
 
 article {
     border-right-color: black;
     margin-right: 50px;
+    
 } 
 
 aside {
@@ -28,6 +29,29 @@ aside {
 
 }
 
+.homeQuote {
+    background-color: #84a98c;
+    margin-left: 10px;
+    height: 100%;
+    color: #2f3e46;
+    box-shadow: 10px 5px 5px rgba(53, 79, 82);
+}
+
+.homeQuote > h2 {
+    padding-left: .5rem;
+}
+
+.homeQuote > p {
+    padding-top: .5rem;
+}
+
+.homeQuote:hover {
+    transform: rotateY(180deg);
+}
+
+
+
+/* buttons*/
 button {
     background-color: #84a98c;
     border: 0;
